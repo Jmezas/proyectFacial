@@ -6,16 +6,17 @@ $border-color: #f1f1f1;
 }
 
 ::ng-deep {
-  .space-preview{
-    canvas{
+  .space-preview {
+    canvas {
       position: relative;
       width: 100%;
       height: 25rem;
     }
   }
 
-  .canvas-preview{
+  .canvas-preview {
     position: relative;
+
     canvas {
       width: 100%;
     }
@@ -23,16 +24,17 @@ $border-color: #f1f1f1;
 
 }
 
-.block-expression{
+.block-expression {
   padding: .5rem;
-  .value-number{
+
+  .value-number {
     color: blue;
   }
 }
 
 .wrapper {
-  margin: 4%;
-  width: 70vw;
+  // margin: 4%;
+  // width: 70vw;
   height: 85vh;
   background-color: white;
   box-shadow: 0 0px 80px rgba(0, 0, 0, 0.17);
@@ -46,17 +48,18 @@ $border-color: #f1f1f1;
     border-bottom: solid 1px $border-color;
     justify-content: space-between;
 
-    .in-header{
+    .in-header {
       display: flex;
       align-content: center;
       align-items: center;
     }
-    .title{
+
+    .title {
       font-weight: 500;
       padding: 0 .75rem;
     }
 
-    .uil{
+    .uil {
       font-size: 1.5rem;
     }
   }
@@ -69,12 +72,14 @@ $border-color: #f1f1f1;
 
     .cam {
       position: relative;
-      .placeholder{
+
+      .placeholder {
         display: none;
         width: 100%;
         height: 100%;
         position: absolute;
       }
+
       //background-color: red;
     }
 
@@ -84,32 +89,37 @@ $border-color: #f1f1f1;
       display: grid;
       grid-template-columns: 6fr 1fr;
 
-      .zone-body{
+      .zone-body {
         padding: 0;
         display: grid;
         grid-template-rows: 1fr 2fr;
-        .block{
+
+        .block {
           padding: 1rem;
           border-top: solid 1px $border-color;
-          &:first-child{
+
+          &:first-child {
             border-top: 0;
           }
+
           //background-color: red;
         }
+
         //background-color: green;
       }
 
-      .zone-btn{
+      .zone-btn {
         //background-color: red;
         border-left: solid 1px $border-color;
       }
 
-      .list-btn{
+      .list-btn {
         list-style: none;
         padding: 0;
         margin: 0;
         font-size: 1.5rem;
-        li{
+
+        li {
           height: 5rem;
           display: flex;
           align-items: center;
@@ -120,10 +130,8 @@ $border-color: #f1f1f1;
   }
 }
 
-.link-github{
+.link-github {
   cursor: pointer;
   text-decoration: none;
   color: #222222;
 }
-
-

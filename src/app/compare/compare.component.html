@@ -1,4 +1,5 @@
-<div class="form-group">
+
+<div class="form-group my-2">
   <label for="picture">Picture</label>
   <div class="custom-file">
     <input
@@ -9,13 +10,13 @@
       multiple
       (change)="upload(file.files)"
     />
-    <label class="custom-file-label" for="customFile">Choose file</label>
+    <!-- <label class="custom-file-label" for="customFile">Choose file</label> -->
   </div>
 </div>
 
 <!--comparar-->
 <div class="form-group">
-  <label for="picture">compare</label>
+  <label for="picture">Compare</label>
   <div class="custom-file">
     <input
       #Filecompare
@@ -25,13 +26,14 @@
       multiple
       (change)="compareface(Filecompare.files)"
     />
-    <label class="custom-file-label" for="compareface">Choose file</label>
+    <!-- <label class="custom-file-label" for="compareface">Choose file</label> -->
   </div>
 </div>
+<br>
 <div class="progress">
   <div class="progress-bar" role="progressbar" [style.width.%]="progress"></div>
 </div>
 <br />
 <div class="alert alert-primary" role="alert">
-  <p>similitud: {{ similitud }}</p>
+  <p>Similitud: {{ similitud }}</p>
 </div>
