@@ -25,6 +25,7 @@
     "ngx-spinner": "^14.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "tslint-angular": "^3.0.3",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -39,5 +40,14 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "*"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }
