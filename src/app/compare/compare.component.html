@@ -1,0 +1,37 @@
+<div class="form-group">
+  <label for="picture">Picture</label>
+  <div class="custom-file">
+    <input
+      #file
+      type="file"
+      id="customFile"
+      accept=".jpg,.png,.gif,.jpeg"
+      multiple
+      (change)="upload(file.files)"
+    />
+    <label class="custom-file-label" for="customFile">Choose file</label>
+  </div>
+</div>
+
+<!--comparar-->
+<div class="form-group">
+  <label for="picture">compare</label>
+  <div class="custom-file">
+    <input
+      #Filecompare
+      type="file"
+      id="compareface"
+      accept=".jpg,.png,.gif,.jpeg"
+      multiple
+      (change)="compareface(Filecompare.files)"
+    />
+    <label class="custom-file-label" for="compareface">Choose file</label>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" [style.width.%]="progress"></div>
+</div>
+<br />
+<div class="alert alert-primary" role="alert">
+  <p>similitud: {{ similitud }}</p>
+</div>
