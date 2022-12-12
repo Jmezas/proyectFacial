@@ -24,10 +24,10 @@ export class VideoPlayerComponent implements OnInit, OnDestroy {
   listEvents: Array<any> = [];
   overCanvas: any;
   filters = [
-    // {
-    //   type: 'question',
-    //   question: '¿Estas subscrito a mi canal? <b>YOUTUBE</b>',
-    // },
+    {
+      type: 'question',
+      question: '¿Estas subscrito a mi canal? <b>YOUTUBE</b>',
+    },
     {
       type: 'image',
       image: 'sunglass-2.png',
@@ -78,7 +78,7 @@ export class VideoPlayerComponent implements OnInit, OnDestroy {
 
     const scale = this.width / displaySize.width;
     console.log(scale);
-
+    /*
     const elementFilterEye = document.querySelector('.filter-eye');
     this.renderer2.setStyle(
       elementFilterEye,
@@ -90,6 +90,7 @@ export class VideoPlayerComponent implements OnInit, OnDestroy {
       'top',
       `${eyes.left[0].y * scale}px`
     );
+ */
   };
   checkFace = () => {
     setInterval(async () => {
